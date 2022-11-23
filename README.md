@@ -36,11 +36,6 @@ Endpoint for the [back-end](https://hackoheist.el.r.appspot.com/)
 ## Installation
 No worries, we got it covered <br> just visit our site 
 ## Screenshots
-<img width="1429" alt="Screenshot 2022-08-09 at 11 42 26 AM" src="https://user-images.githubusercontent.com/78999739/183580016-86d27243-f3fc-472f-bd6e-daf56c0647ad.png">
-
-<img width="1429" alt="Screenshot 2022-08-09 at 11 42 38 AM" src="https://user-images.githubusercontent.com/78999739/183579998-20484c82-11ef-42af-9ec6-2b4c97590d3a.png">
-
-![WhatsApp Image 2022-08-09 at 11 53 55 AM](https://user-images.githubusercontent.com/78999739/183579965-e0e4446b-1ac1-49d4-ac2d-135ede5c1cc7.jpeg)
 
 
 
