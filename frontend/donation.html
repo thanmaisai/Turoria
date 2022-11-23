@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    />
+</head>
+<body>
+    <!--nav-->
+<nav class="navbar is-danger">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#" style="font-weight:bold;">
+          <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNzUycHQiIGhlaWdodD0iNzUycHQiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDc1MiA3NTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiA8Zz4KICA8cGF0aCBkPSJtNDU1LjU2IDQyNS43MyAzMy42MjUtMTIuNzg1IDUuNjgzNi01LjY4MzZ2LTExNi45N2MwLTMuNzg5MS0yLjgzOTgtNy4xMDU1LTcuMTA1NS03LjEwNTVoLTk4LjUwNGMwIDM0LjU3LTM1LjUyIDYyLjAzOS04MC4wMzUgNjIuMDM5LTIuMzY3MiAwLTQuNzM0NCAwLTcuMTA1NS0wLjQ3MjY2LTUuMjEwOSAyLjM2NzItOS45NDUzIDQuNzM0NC0xNC42OCA2LjYyODl2MjkuODM2YzIuODM5OC0wLjk0NTMxIDYuMTU2Mi0xLjQyMTkgOS40NzI3LTEuNDIxOSAxMi43ODUgMCAyNC42MjUgNy4xMDU1IDMwLjMwOSAxOC40NjkgNC4yNjE3IDguMDUwOCA0LjczNDQgMTcuNTIzIDEuODk0NSAyNi4wNDctMi44Mzk4IDguNTIzNC04Ljk5NjEgMTUuNjI5LTE3LjA1MSAxOS44OTFsLTI0LjYyNSAxMi43ODV2MTAuNDE4YzAgMy43ODkxIDMuMzE2NCA3LjEwNTUgNy4xMDU1IDcuMTA1NWgxNDMuOTdjLTAuOTQ1MzEtMS40MjE5LTEuODk0NS0zLjMxNjQtMi4zNjcyLTQuNzM0NC0zLjMxNjQtOC41MjM0LTIuODM5OC0xNy45OTYgMC45NDUzMS0yNi4wNDcgMi44Mzk4LTguMDUwOCA5Ljk0NTMtMTQuNjggMTguNDY5LTE3Ljk5NnoiLz4KICA8cGF0aCBkPSJtMjY5LjQ1IDMxOC43Yy0xLjQyMTkgNC4yNjE3LTQuMjYxNyA5LjQ3MjctOS45NDUzIDE2LjEwMi0zLjMxNjQgNC4yNjE3IDAuNDcyNjYgOS45NDUzIDUuNjgzNiA4LjA1MDggMTAuNDE4LTMuNzg5MSAyMi4yNTgtOS40NzI3IDMzLjYyNS0xNC42OCAzLjMxNjQgMC40NzI2NiA2LjYyODkgMC40NzI2NiAxMC40MTggMC40NzI2NiAzNS4wNDcgMCA2My40NjEtMjAuMzYzIDYzLjQ2MS00NS40NjUgMC0yNS4xMDItMjguNDE0LTQ1LjQ2NS02My40NjEtNDUuNDY1LTM1LjA0NyAwLTYzLjQ2MSAyMC4zNjMtNjMuNDYxIDQ1LjQ2NSAwIDE0LjIwNyA5IDI2Ljk5MiAyMy42OCAzNS41MnptNzEuMDM5LTQ0LjA0M2M0LjczNDQgMCA4LjUyMzQgMy43ODkxIDguNTIzNCA4LjUyMzQgMCA0LjczNDQtMy43ODkxIDguNTIzNC04LjUyMzQgOC41MjM0cy04LjUyMzQtMy43ODkxLTguNTIzNC04LjUyMzRjLTAuMDAzOTA3LTQuNzM0NCAzLjc4NTItOC41MjM0IDguNTIzNC04LjUyMzR6bS0zMS4yNTggMGM0LjczNDQgMCA4LjUyMzQgMy43ODkxIDguNTIzNCA4LjUyMzQgMCA0LjczNDQtMy43ODkxIDguNTIzNC04LjUyMzQgOC41MjM0LTQuNzM0NCAwLTguNTIzNC0zLjc4OTEtOC41MjM0LTguNTIzNCAwLTQuNzM0NCAzLjc4OTEtOC41MjM0IDguNTIzNC04LjUyMzR6bS0zMS4yNTggMGM0LjczNDQgMCA4LjUyMzQgMy43ODkxIDguNTIzNCA4LjUyMzQgMCA0LjczNDQtMy43ODkxIDguNTIzNC04LjUyMzQgOC41MjM0cy04LjUyMzQtMy43ODkxLTguNTIzNC04LjUyMzRjLTAuNDcyNjYtNC43MzQ0IDMuNzg5MS04LjUyMzQgOC41MjM0LTguNTIzNHoiLz4KICA8cGF0aCBkPSJtNTkzLjg1IDM5Ni44NGMtOC4wNTA4LTE5LjQxOC0zNy44ODctMTYuNTc0LTQ5LjI1NC0xMi43ODUtNS4yMTA5IDEuNDIxOS04LjUyMzQgNC4yNjE3LTEyLjMxMiA4LjA1MDgtNC4yNjE3IDQuMjYxNy0zNC4wOTggMzUuMDQ3LTM0LjA5OCAzNS4wNDdsLTM2LjkzOCAxNC4yMDdjLTguOTk2MSAzLjMxNjQtMTMuMjYyIDEzLjI2Mi05Ljk0NTMgMjIuMjU4IDIuODM5OCA3LjEwNTUgOS40NzI3IDExLjM2NyAxNi4xMDIgMTEuMzY3IDEuODk0NSAwIDQuMjYxNy0wLjQ3MjY2IDYuMTU2Mi0wLjk0NTMxbDQwLjcyNy0xNS42MjljMi4zNjcyLTAuOTQ1MzEgNC43MzQ0LTIuMzY3MiA2LjE1NjItNC4yNjE3bDIuODM5OC0yLjgzOThjMC40NzI2NiAyMC44MzYgMy4zMTY0IDU1Ljg4MyAzLjc4OTEgNTcuNzc3IDAuNDcyNjYgMi44Mzk4IDEuODk0NSA1LjIxMDkgNS42ODM2IDUuMjEwOWg2Mi41MTJjMy4zMTY0IDAgNS4yMTA5LTIuMzY3MiA1LjY4MzYtNS42ODM2IDAuMDAzOTA2LTM3Ljg5NSAxLjQyNTgtOTAuOTM4LTcuMTAxNi0xMTEuNzd6Ii8+CiAgPHBhdGggZD0ibTU5NS4yNyAzMzQuOGMwIDIwLjkyMi0xNi45NjEgMzcuODg3LTM3Ljg4NyAzNy44ODctMjAuOTI2IDAtMzcuODg3LTE2Ljk2NS0zNy44ODctMzcuODg3IDAtMjAuOTI2IDE2Ljk2MS0zNy44ODcgMzcuODg3LTM3Ljg4NyAyMC45MjYgMCAzNy44ODcgMTYuOTYxIDM3Ljg4NyAzNy44ODciLz4KICA8cGF0aCBkPSJtMzEyLjA3IDQwNi4zMWMtNC4yNjE3LTguNTIzNC0xNC42OC0xMS44NC0yMy4yMDctNy41NzgxbC0zMi42NzYgMTYuNTc0cy0xNy45OTYtMTIuMzEyLTIzLjY4LTE2LjU3NGMtMy43ODkxLTIuODM5OC0xNC4yMDctMTEuMzY3LTI0LjYyNS0xNC42OC0xMS44NC0zLjc5My00MS4xOTktNi4xNjAyLTQ5LjcyNyAxMi43ODUtOC41MjM0IDIwLjgzNi03LjEwMTYgNzMuODc5LTYuNjI4OSAxMTEuMjkgMCAzLjMxNjQgMi4zNjcyIDUuNjgzNiA1LjY4MzYgNS42ODM2aDYyLjUxMmMzLjc4OTEgMCA1LjIxMDktMS44OTQ1IDUuNjgzNi01LjIxMDkgMC40NzI2Ni0xLjg5NDUgMy43ODkxLTQ0Ljk4OCAzLjc4OTEtNjMuNDYxdi02LjYyODlsMTYuNTc0IDExLjM2N2MyLjgzOTggMS44OTQ1IDYuMTU2MiAyLjgzOTggOS45NDUzIDIuODM5OCAyLjgzOTggMCA1LjIxMDktMC40NzI2NiA4LjA1MDgtMS44OTQ1bDQxLjY3Ni0yMS4zMTJjNy41NzgxLTMuNzg1MiAxMC44OTUtMTQuMjAzIDYuNjI4OS0yMy4xOTl6Ii8+CiAgPHBhdGggZD0ibTIzMi41MSAzMzQuOGMwIDIwLjkyMi0xNi45NjUgMzcuODg3LTM3Ljg4NyAzNy44ODctMjAuOTI2IDAtMzcuODg3LTE2Ljk2NS0zNy44ODctMzcuODg3IDAtMjAuOTI2IDE2Ljk2MS0zNy44ODcgMzcuODg3LTM3Ljg4NyAyMC45MjIgMCAzNy44ODcgMTYuOTYxIDM3Ljg4NyAzNy44ODciLz4KIDwvZz4KPC9zdmc+Cg==" style="max-height: 90px;" class="py-2 px-2">
+          HELPIFY - Details
+        </a>
+        <span class="navbar-burger burger" data-target="navMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </div>
+
+      <div id="navMenu" class="navbar-menu">
+        <div class="navbar-end">
+          <a href="index.html" class="navbar-item ">HOME</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!--card-->
+  <div class="card has-text-centered">
+    <div class="card-content">
+      <p class="title">
+        Mentor Details
+      </p>
+      <p class="title">
+      Reachout for help from any of the mentors
+      </p>
+      <p class="subtitle">
+      </p>
+    </div>
+    <footer class="card-footer">
+      <p class="card-footer-item">
+        <span>
+          <div class="container">
+            <div class="table-responsive">
+              <h1 >Mentor List</h1>
+              <br />
+              <div id="Mentor_table"></div>
+            </div>
+          </div>
+        </span>
+      </p>
+    </footer>
+  </div>
+</body>
+<script>
+  $(document).ready(function(){
+    $.ajax({
+     url:"classList.csv", // added later
+     dataType:"text",
+     success:function(data)
+     {
+      var employee_data = data.split(/\r?\n|\r/);
+      var table_data = '<table class="table table-bordered table-striped">';
+      for(var count = 0; count<employee_data.length; count++)
+      {
+       var cell_data = employee_data[count].split(",");
+       table_data += '<tr>';
+       for(var cell_count=0; cell_count<cell_data.length; cell_count++)
+       {
+        if(count === 0)
+        {
+         table_data += '<th>'+cell_data[cell_count]+'</th>';
+        }
+        else
+        {
+         table_data += '<td>'+cell_data[cell_count]+'</td>';
+        }
+       }
+       table_data += '</tr>';
+      }
+      table_data += '</table>';
+      $('#Mentor_table').html(table_data);
+     }
+    });
+  });
+</script>
+</html>
