@@ -58,6 +58,9 @@ In this menu the Mentors can see the Issues raised by the student and provide so
           <a href="###" class="navbar-item">GitHub</a>
         </div>
       </div>
+  
+  This is the Navigation bar contains the Student Menu and Mentor Menu along with project files on Github.
+  Here we are using <div> tag for division on navbar and Anchor tag <a> for linking the pages
 
 # Snippet for Issue Option
  <div class="message is-dark">
@@ -70,7 +73,7 @@ In this menu the Mentors can see the Issues raised by the student and provide so
                   </div>
                 </div>
               </div>
-
+    Issus option opens a form to fill out issue and submit the for the mentor.
 # Snippet for Mentor Details Option
 <div>
               <div class="message is-dark">
@@ -89,7 +92,12 @@ In this menu the Mentors can see the Issues raised by the student and provide so
                 </div>
               </div>
             </div>
-
+    Mentor Details option gives the mentor details and list for mentors to contact
+## Mentor Menu 
+     In this menu Mentors can gothrough the menu and solve the particular issues raised by the student.
+     
+## Code For Back End 
+- Here shailesh need to add code 
 ## Development
 Endpoint for the [front-end](https://black-hill-6592.on.fleek.co/) 
 <br>
