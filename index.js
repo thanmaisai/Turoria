@@ -7,10 +7,7 @@ var fs = require('fs');
 const storage = multer.memoryStorage()
 const upload = multer({ storage: storage })
 
-const fleek = require('@fleekhq/fleek-storage-js');
 require('dotenv').config()
-// const apiKey = process.env.FLEEK_API_KEY;
-// const apiSecret = process.env.FLEEK_API_SECRET;
 
 
 var app = express();
@@ -27,77 +24,29 @@ app.use(cors())
 
 app.get('/', function (req, res) {
     // res.send('hello, this is just a backend. The link for the frontend will be added here soon')
-    res.sendFile(appRoot+ "/frontend/index.html")
+    res.sendFile(appRoot + "/frontend/index.html")
+})
+
+app.get('/index', function (req, res) {
+    // res.send('hello, this is just a backend. The link for the frontend will be added here soon')
+    res.sendFile(appRoot + "/frontend/index.html")
+})
+
+app.get('/student', function (req, res) {
+    // res.send('hello, this is just a backend. The link for the frontend will be added here soon')
+    res.sendFile(appRoot + "/frontend/student.html")
+})
+
+app.get('/mentor', function (req, res) {
+    // res.send('hello, this is just a backend. The link for the frontend will be added here soon')
+    res.sendFile(appRoot + "/frontend/mentor.html")
 })
 
 
-
-
-
-const uploadFunction = async (data) => {
-    const date = new Date();
-    const timestamp = date.getTime();
-
-    const input = {
-        apiKey,
-        apiSecret,
-        key: `${timestamp}.txt`,
-        data,
-    };
-
-    try {
-        const result = await fleek.upload(input);
-        console.log(result);
-    } catch (e) {
-        console.log('error', e);
-    }
-}
-
-const uploadPicFunction = async (data, ContentType, key) => {
-
-    const input = {
-        apiKey,
-        apiSecret,
-        key,
-        data,
-        ContentType
-    };
-
-    try {
-        const result = await fleek.upload(input);
-        console.log(result);
-    } catch (e) {
-        console.log('error', e);
-    }
-}
-
-async function deleteAllData() {
-    try {
-        const result = await fleek.deleteFile({
-            apiKey,
-            apiSecret,
-            key: 'alldata.json',
-            bucket: '1e4f9433-e9a2-4412-a561-9a1ddf54e93c-bucket',
-        });
-    } catch (e) {
-        console.log('error', e);
-    }
-
-}
-async function alldataUpload(data) {
-    const input = {
-        apiKey,
-        apiSecret,
-        key: 'alldata.json',
-        data,
-    };
-
-    try {
-        const result = await fleek.upload(input);
-    } catch (e) {
-        console.log('error', e);
-    }
-}
+app.get('/Mentorslist', function (req, res) {
+    // res.send('hello, this is just a backend. The link for the frontend will be added here soon')
+    res.sendFile(appRoot + "/frontend/Mentorslist.html")
+})
 
 app.post('/createComplaint', upload.single('upfile'), (req, res) => {
     const fileName = req.file.originalname;
@@ -118,27 +67,10 @@ app.post('/createComplaint', upload.single('upfile'), (req, res) => {
         PicKey,
         status: 0
     }
-    async function getDB() {
 
 
-        const res = await fetch('https://storageapi.fleek.co/1e4f9433-e9a2-4412-a561-9a1ddf54e93c-bucket/alldata.json')
 
-        alldata = await res.json();
-        // alldata.push(theElement);
-        alldata['issues'].push(theElement)
-
-
-        // delte old file and create new
-        await deleteAllData()
-        // upload alldata
-        await alldataUpload(JSON.stringify(alldata));
-
-        await uploadPicFunction(theFile, fileType, PicKey);
-
-    }
-    getDB();
-
-    res.redirect('https://black-hill-6592.on.fleek.co/success.html');
+    res.redirect('/success');
 
 
     // uploadFunction(userName);
@@ -159,77 +91,11 @@ app.post('/updateStatus', function (req, res) {
 
 
     // alldata = JSON.parse(alldata)
-    async function getDB() {
-        const res = await fetch('https://storageapi.fleek.co/1e4f9433-e9a2-4412-a561-9a1ddf54e93c-bucket/alldata.json')
 
-        alldata = await res.json();
 
-        if (status == 'Close') {
-            alldata['issues'][id].status = 2;
-        } else if (status == 'Investigating') {
-            alldata['issues'][id].status = 1;
-        }
-
-        await deleteAllData()
-        await alldataUpload(JSON.stringify(alldata));
-
-    }
-
-    getDB()
-    res.redirect('https://black-hill-6592.on.fleek.co/success.html');
+    res.redirect('/success');
 
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 const port = process.env.PORT || 3000;
 app.listen(port, function () {
