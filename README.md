@@ -20,15 +20,42 @@ Being a mentor could boost your own career, according to Sun Microsystems, who o
 
 Taking a step further from statistics, let’s summarize the reasons why you would need to have a mentor in the first place:
 
-When you’re stuck at any particular coding problem, mentors can help you solve it;
+- When you’re stuck at any particular coding problem, mentors can help you solve it;
 - If you’re stuck between two career paths or choices, mentors can help you decide what best suits your personality, knowledge, or interests;
 - If you are very slow at achieving your goals, mentors can help accelerate your learning.
 - If you need inspiration, mentors can be a great source of new ideas, challenges, and motivation;
 - If you need to prepare for coding interviews, mentors can guide you through a set of appropriate challenges and advise on
 strategies for tackling the most difficult questions.
+<br>
+Here we present an WebApp where a student can contact his or her mentor for any kind of reason and problems.
 
-##
+## WebApp
 
+Our web app contain a Student Menu and Mentor Menu. 
+
+## Student Menu
+In student section we have 2 options 
+- Raise Issue 
+- Contact Mentors
+
+# Raise Issue
+This option concerns with the student having the any kind problem.
+# Contact Mentors 
+Student can contact their mentor and can fetch other details of mentors.
+
+## Mentor Menu 
+
+In this menu the Mentors can see the Issues raised by the student and provide solution to that particular problem.
+
+## Code snippets for frontend
+<div id="navMenu" class="navbar-menu">
+        <div class="navbar-end">
+          <a href="#" class="navbar-item ">Home</a>
+          <a href="student.html" class="navbar-item">Student</a>
+          <a href="mentor.html" class="navbar-item">Mentor</a>
+          <a href="###" class="navbar-item">GitHub</a>
+        </div>
+      </div>
 
 
 ## Development
