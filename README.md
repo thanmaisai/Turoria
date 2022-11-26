@@ -1,6 +1,6 @@
 <h1>Tutoria-Mentoring</h1><br>
 All of it starts from you!
-# [Greensavers](https://black-hill-6592.on.fleek.co/)
+# [Tutoria](https://black-hill-6592.on.fleek.co/)
 A webApp made for the <strong>Web Technology assignment</strong> 2022 
 
 
