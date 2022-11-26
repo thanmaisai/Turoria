@@ -9,12 +9,15 @@ const upload = multer({ storage: storage })
 
 const fleek = require('@fleekhq/fleek-storage-js');
 require('dotenv').config()
-const apiKey = process.env.FLEEK_API_KEY;
-const apiSecret = process.env.FLEEK_API_SECRET;
+// const apiKey = process.env.FLEEK_API_KEY;
+// const apiSecret = process.env.FLEEK_API_SECRET;
 
 
 var app = express();
 // app.use(function(req, res, next) {
+
+var path = require('path');
+global.appRoot = path.resolve(__dirname);
 //     res.header("Access-Control-Allow-Origin", "*");
 //     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
 //     next();
@@ -23,7 +26,8 @@ app.use(cors())
 
 
 app.get('/', function (req, res) {
-    res.send('hello, this is just a backend. The link for the frontend will be added here soon')
+    // res.send('hello, this is just a backend. The link for the frontend will be added here soon')
+    res.sendFile(appRoot+ "/frontend/index.html")
 })
 
 
@@ -159,7 +163,7 @@ app.post('/updateStatus', function (req, res) {
         const res = await fetch('https://storageapi.fleek.co/1e4f9433-e9a2-4412-a561-9a1ddf54e93c-bucket/alldata.json')
 
         alldata = await res.json();
-        
+
         if (status == 'Close') {
             alldata['issues'][id].status = 2;
         } else if (status == 'Investigating') {
@@ -230,5 +234,5 @@ app.post('/updateStatus', function (req, res) {
 const port = process.env.PORT || 3000;
 app.listen(port, function () {
 
-    console.log('Your app is listening on port \n' + 'http://localhost:' + port)
+    console.log('Your app is listening on port ' + port + '\n' + 'http://localhost:' + port)
 });
