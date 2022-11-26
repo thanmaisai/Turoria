@@ -48,6 +48,8 @@ Student can contact their mentor and can fetch other details of mentors.
 In this menu the Mentors can see the Issues raised by the student and provide solution to that particular problem.
 
 ## Code snippets for frontend
+
+# Snippet of Navigatior bar <br>
 <div id="navMenu" class="navbar-menu">
         <div class="navbar-end">
           <a href="#" class="navbar-item ">Home</a>
@@ -57,6 +59,36 @@ In this menu the Mentors can see the Issues raised by the student and provide so
         </div>
       </div>
 
+# Snippet for Issue Option
+ <div class="message is-dark">
+                <div class="message-header">
+                  <p> Got a problem - raise a Issue </p>
+                </div>
+                <div class="message-body">
+                  <p>Report any issue you feel that need to be addressed.</p>
+                  <div class="has-text-centered mt-5"><button class="button is-danger" id="raise-complaint">Raise Issue</button>
+                  </div>
+                </div>
+              </div>
+
+# Snippet for Mentor Details Option
+<div>
+              <div class="message is-dark">
+                <div class="message-header">
+                  <p>Contact Mentor</p>
+                </div>
+                <div class="message-body">
+                  <p>Click below to fetch mentor details</p>
+                  <div class="has-text-centered mt-5"><button onclick="donation()" class="button is-danger">Contact</button>
+                    <script>
+                      function donation() {
+                        window.location.href="Mentorslist.html";
+                      }
+                    </script>
+                  </div>
+                </div>
+              </div>
+            </div>
 
 ## Development
 Endpoint for the [front-end](https://black-hill-6592.on.fleek.co/) 
