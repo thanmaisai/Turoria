@@ -54,8 +54,54 @@
       <p class="card-footer-item">
         <span>
           <div class="container">
-            <div class="table-responsive">
-              <h1 >Mentor List</h1>
+            <div class="table-responsive mx-auto" style="width: 600px;">
+              
+                <table class="table is-bordered my-auto">
+                  <thead>
+                    <tr>
+                      <th>Mentor Name</th>
+                      <th>Contact Number</th>
+                    </tr>
+                  </thead>
+                  <thead>
+                    <tr>
+                      <th>Sanjay</th>
+                      <th>7893456789</th>
+                    </tr>
+                  </thead>
+                  <thead>
+                    <tr>
+                      <th>Thanmaisai</th>
+                      <th>7893456789</th>
+                    </tr>
+                  </thead><thead>
+                    <tr>
+                      <th>Arjun</th>
+                      <th>7893456789</th>
+                    </tr>
+                  </thead>
+                  <thead>
+                    <tr>
+                      <th>Shailesh</th>
+                      <th>7893456789</th>
+                    </tr>
+                  </thead>
+                  <thead>
+                    <tr>
+                      <th>Vignesh</th>
+                      <th>7893456789</th>
+                    </tr>
+                  </thead>
+                  <thead>
+                    <tr>
+                      <th>Manoj</th>
+                      <th>7893456789</th>
+                    </tr>
+                  </thead>
+                  <thead>
+                  </center>
+                  </table>
+                
               <br />
               <div id="Mentor_table"></div>
             </div>
@@ -66,35 +112,35 @@
   </div>
 </body>
 <script>
-  $(document).ready(function(){
-    $.ajax({
-     url:"classList.csv", // added later
-     dataType:"text",
-     success:function(data)
-     {
-      var employee_data = data.split(/\r?\n|\r/);
-      var table_data = '<table class="table table-bordered table-striped">';
-      for(var count = 0; count<employee_data.length; count++)
-      {
-       var cell_data = employee_data[count].split(",");
-       table_data += '<tr>';
-       for(var cell_count=0; cell_count<cell_data.length; cell_count++)
-       {
-        if(count === 0)
-        {
-         table_data += '<th>'+cell_data[cell_count]+'</th>';
-        }
-        else
-        {
-         table_data += '<td>'+cell_data[cell_count]+'</td>';
-        }
-       }
-       table_data += '</tr>';
-      }
-      table_data += '</table>';
-      $('#Mentor_table').html(table_data);
-     }
-    });
-  });
+  // $(document).ready(function(){
+  //   $.ajax({
+  //    url:"classList.csv", // added later
+  //    dataType:"text",
+  //    success:function(data)
+  //    {
+  //     var employee_data = data.split(/\r?\n|\r/);
+  //     var table_data = '<table class="table table-bordered table-striped">';
+  //     for(var count = 0; count<employee_data.length; count++)
+  //     {
+  //      var cell_data = employee_data[count].split(",");
+  //      table_data += '<tr>';
+  //      for(var cell_count=0; cell_count<cell_data.length; cell_count++)
+  //      {
+  //       if(count === 0)
+  //       {
+  //        table_data += '<th>'+cell_data[cell_count]+'</th>';
+  //       }
+  //       else
+  //       {
+  //        table_data += '<td>'+cell_data[cell_count]+'</td>';
+  //       }
+  //      }
+  //      table_data += '</tr>';
+  //     }
+  //     table_data += '</table>';
+  //     $('#Mentor_table').html(table_data);
+  //    }
+  //   });
+  // });
 </script>
 </html>
