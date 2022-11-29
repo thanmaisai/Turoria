@@ -101,9 +101,9 @@ In this menu the Mentors can see the Issues raised by the student and provide so
 ## Code For Back End 
 - Here shailesh need to add code 
 ## Development
-Endpoint for the [front-end](https://black-hill-6592.on.fleek.co/) 
+Endpoint for the [front-end](/) 
 <br>
-Endpoint for the [back-end](https://hackoheist.el.r.appspot.com/)
+Endpoint for the [back-end](http://localhost:3000/)
 
 # Tech Stack Used
 

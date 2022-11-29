@@ -134,7 +134,7 @@ app.post('/createComplaint', upload.single('upfile'), (req, res) => {
     }
     getDB();
 
-    res.redirect('https://black-hill-6592.on.fleek.co/success.html');
+    res.redirect('/success.html');
 
 
     // uploadFunction(userName);
@@ -172,7 +172,7 @@ app.post('/updateStatus', function (req, res) {
     }
 
     getDB()
-    res.redirect('https://black-hill-6592.on.fleek.co/success.html');
+    res.redirect('/success');
 
 })
 
